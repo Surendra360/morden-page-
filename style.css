@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    font-family: "gilroy";
+    overflow: hidden;
+
+}
+.heading{
+    width: 100%;
+    /* background-color: red; */
+    font-size: 14vmax;
+    color: rgb(73, 73, 2);
+}
+
+nav{
+    /* background-color: pink; */
+    position: relative;
+    padding: 1% 1%;
+    border: 2px solid black;
+}
+
+.nav-left > span {
+    margin-right: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(117, 116, 116);
+    transition: 0.25s linear;  
+}
+
+.nav-left > span:hover{
+    cursor: pointer;
+    color: black;
+    text-shadow: 1px 1px 0 rgb(236, 230, 117);
+    font-size: 18.4px;
+}
+
+.nav-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 14%;
+}
+
+.nav-right-first-btn{
+    height: 100%;
+    padding: 0 10%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    transition: 0.25s;
+    background-color: white;
+    color: black;
+}
+
+.nav-right > .nav-right-first-btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.nav-right-second-btn{
+    transform: scale(1.1);
+    height: 92%;
+    padding: 0 6%;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    transition: 0.25s;
+}
+.nav-right-second-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.left-content {
+    position: relative;
+    background-color: rgb(188, 116, 188);
+    width: 50%;
+    height: 52.9%;
+    padding: 5%;
+}
+
+.left-content > h1 {
+    position: absolute;
+    left: 25%;
+    font-size: 50px;
+    font-family: "bebas neue";
+    font-weight: 900;
+    color: rgb(151, 13, 13);
+    /* text-align: center; */
+    line-height: 70px;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    animation: slide 1s linear 0.5s 1 both;
+    top: 50%;
+    opacity: 0;
+}
+
+@keyframes slide {
+    from{
+    }
+    to{
+        top: 20%;
+        opacity: 1;
+    }
+    
+}
+
+.left-content > p {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: cursive;
+    line-height: 27px;
+    animation: display 1s linear 1.5s 1 both;
+    opacity: 0;
+    
+} 
+@keyframes display {
+    from{
+
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+    
+}
+
+.right-content{
+    background-color: rgba(129, 126, 131, 0.7);
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    width: 50%;
+    height: 52.5%;
+    background-image: url(https://o.remove.bg/downloads/f1057d5f-7397-45fa-8d68-99c6a21dc686/pngtree-semiflat-color-vector-character-of-a-man-igniting-fireworks-vector-png-image_43452612-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.right-content-btn {
+    padding: 2% 3%;
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: .25s;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border-radius: 25px;
+    transition: 0.25s;
+    
+}
+
+.right-content-btn:hover{
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
